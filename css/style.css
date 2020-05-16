@@ -1,0 +1,121 @@
+body{
+    height: 100vh;
+    background-image: url('https://picsum.photos/id/155/800/600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 0 30px;
+    z-index: 1;
+}
+.m-y-2 {
+    margin: 0 24px;
+}
+.header {
+    position: relative;
+    max-width: 100%;
+    height: 200px;
+    background-image: url('https://picsum.photos/id/119/500/300');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header img {
+    max-height: 100%;
+    border-radius: 10px 10px  0 0;
+}
+.header h1 {
+    position: absolute;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 2px 1px 4px black;
+    padding: 10px;
+}
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 24px;
+    }
+}
+.content {
+    background: white;
+    max-height: 250px;
+    height: 250px;
+    overflow-y: auto;
+}
+.content .item {
+    font-size: 16px;
+    line-height: 210%;
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.473);
+}
+.content .item i {
+    font-size: 26px;
+    cursor: pointer;
+}
+.fa.fa-check-circle {
+    color: green;
+}
+.content .item p {
+    flex: 70% 1 0;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.line-through {
+    text-decoration: line-through;
+    color: #ccc;
+}
+.content .item a {
+    color: rgb(114, 52, 11);
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 0 -15px;
+    cursor: pointer;
+}
+.content .item a::before {
+    content: "\f014";
+}
+.content .item a:hover {
+    color: rgb(189, 86, 18);
+}
+.form-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-top: 1px solid rgba(204, 204, 204, 0.473);
+}
+.form-add input[type="text"],
+.form-add input[type="button"] {
+    height: 44px;
+    font-size: 18px;
+    padding: 5px;
+    border: 0;
+}
+.form-add input[type="text"] {
+    flex-grow: 1;
+}
+.form-add input[type="button"] {
+    width: 44px;
+    height: 44px;
+    color: white;
+    background: #dcb090;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    -webkit-appearance: none;
+}
+.form-add input[type="button"]:hover {
+    background: #d68e5a;
+}
